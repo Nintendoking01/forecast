@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisemeteo</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <h1>wisemeteo</h1>
+                <div class="navbar-countries">
+                    <img src="icons/Frame.svg" alt="map-countries">
+                    <span class="navbar__text">Countries</span>
+                </div>
+                <div class="navbar-search">
+                    <input type="search" id="search" placeholder="City, region or Country">
+                    <a href="#" class="navbar-search search-button"><img src="icons/Search.svg" alt="search-btn"></a>
+                </div>
+                <div class="navbar-filters">
+                    <div class="navbar-filters__lgn">
+                        <span class="navbar__text">En</span>
+                        <img src="icons/Vector.svg" alt="language">
+                    </div>
+                    <div class="navbar-filters__temp">
+                        <span class="navbar__text">F</span>
+                        <img src="icons/Vector.svg" alt="temperature">
+                    </div>
+                    <div class="navbar-filters__month">
+                        <span class="navbar__text">M</span>
+                        <img src="icons/Vector.svg" alt="month">
+                    </div>
+                </div>
+            </nav>
+            <div class="navbar-menu">
+                <ul class="navbar-menu__item">
+                    <li><a class="navbar__text" href="#">Today</a></li>
+                    <li><a class="navbar__text" href="#">Tomorrow</a></li>
+                    <li><a class="navbar__text" href="#">One week</a></li>
+                    <li><a class="navbar__text" href="#">Two weeks</a></li>
+                    <li><a class="navbar__text" href="#">Month</a></li>
+                    <li><a class="navbar__text" href="#">Three months</a></li>
+                    <li><a class="navbar__text" href="#">Half year</a></li>
+                    <li><a class="navbar__text" href="#">Year</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <section class="forecast">
+                    <div class="forecast__main">
+                        <span class="forecast-main__day">22 July, Wednesday, 14:00</span>
+                        <span class="forecast-main__city">Toronto</span>
+                        <br>
+                        <span class="forecast-main__country">Canada</span>
+                        <div class="forecast-main-temp">
+                            <span class="forecast-main__temp">72°</span>
+                            <img src="icons/cloudy_sun3 2.png" alt="cloudy">
+                        </div>
+                        <div class="forecast-main-weather">
+                            <div class="forecast-main-humidity">
+                                <img src="icons/humidity.svg" alt="humidity">
+                                <span class="forecast-main__humidity">0%</span>
+                            </div>
+                            <div class="forecast-main-windiness">
+                                <img src="icons/windiness.svg" alt="windiness">
+                                <span class="forecast-main__windiness">11 km/h</span>
+                            </div>
+                            <div class="forecast-main-direction">
+                                <img src="icons/direction.svg" alt="direction">
+                                <span class="forecast-main__direction">N-W</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forecast-hourly col-md-8 offset-1">
+                        <div class="forecast-hourly-hour">
+                            <span class="forecast-hourly-hour__time">09:00</span>
+                            <img class="forecast-hourly-hour__img" src="icons/cloudy_sun3 2.png" alt="cloudy">
+                            <span class="forecast-hourly-hour__temp">72° F</span>
+                            <span class="forecast-hourly-hour__windiness">11 km/h</span>
+                            <span class="forecast-hourly-hour__direction">N-W</span>
+                        </div>
+                        <div class="forecast-hourly-hour">
+                            <span class="forecast-hourly-hour__time">09:00</span>
+                            <img class="forecast-hourly-hour__img" src="icons/cloudy_sun3 2.png" alt="cloudy">
+                            <span class="forecast-hourly-hour__temp">72° F</span>
+                            <span class="forecast-hourly-hour__windiness">11 km/h</span>
+                            <span class="forecast-hourly-hour__direction">N-W</span>
+                        </div>
+                        <div class="forecast-hourly-hour">
+                            <span class="forecast-hourly-hour__time">12:00</span>
+                            <img class="forecast-hourly-hour__img" src="icons/cloudy_sun3 2.png" alt="cloudy">
+                            <span class="forecast-hourly-hour__temp">72° F</span>
+                            <span class="forecast-hourly-hour__windiness">11 km/h</span>
+                            <span class="forecast-hourly-hour__direction">N-W</span>
+                        </div>
+                        <div class="forecast-hourly-hour">
+                            <span class="forecast-hourly-hour__time">15:00</span>
+                            <img class="forecast-hourly-hour__img" src="icons/cloudy_sun3 2.png" alt="cloudy">
+                            <span class="forecast-hourly-hour__temp">72° F</span>
+                            <span class="forecast-hourly-hour__windiness">11 km/h</span>
+                            <span class="forecast-hourly-hour__direction">N-W</span>
+                        </div>
+                        <div class="forecast-hourly-hour">
+                            <span class="forecast-hourly-hour__time">18:00</span>
+                            <img class="forecast-hourly-hour__img" src="icons/cloudy_sun3 2.png" alt="cloudy">
+                            <span class="forecast-hourly-hour__temp">72° F</span>
+                            <span class="forecast-hourly-hour__windiness">11 km/h</span>
+                            <span class="forecast-hourly-hour__direction">N-W</span>
+                        </div>
+                        <div class="forecast-hourly-hour">
+                            <span class="forecast-hourly-hour__time">21:00</span>
+                            <img class="forecast-hourly-hour__img" src="icons/cloudy_sun3 2.png" alt="cloudy">
+                            <span class="forecast-hourly-hour__temp">72° F</span>
+                            <span class="forecast-hourly-hour__windiness">11 km/h</span>
+                            <span class="forecast-hourly-hour__direction">N-W</span>
+                        </div>
+                        <div class="forecast-hourly-hour">
+                            <span class="forecast-hourly-hour__time">00:00</span>
+                            <img class="forecast-hourly-hour__img" src="icons/cloudy_sun3 2.png" alt="cloudy">
+                            <span class="forecast-hourly-hour__temp">72° F</span>
+                            <span class="forecast-hourly-hour__windiness">11 km/h</span>
+                            <span class="forecast-hourly-hour__direction">N-W</span>
+                        </div>
+                        <div class="forecast-hourly-hour">
+                            <span class="forecast-hourly-hour__time">03:00</span>
+                            <img class="forecast-hourly-hour__img" src="icons/cloudy_sun3 2.png" alt="cloudy">
+                            <span class="forecast-hourly-hour__temp">72° F</span>
+                            <span class="forecast-hourly-hour__windiness">11 km/h</span>
+                            <span class="forecast-hourly-hour__direction">N-W</span>
+                        </div>
+                        <div class="forecast-hourly-hour">
+                            <span class="forecast-hourly-hour__time">06:00</span>
+                            <img class="forecast-hourly-hour__img" src="icons/cloudy_sun3 2.png" alt="cloudy">
+                            <span class="forecast-hourly-hour__temp">72° F</span>
+                            <span class="forecast-hourly-hour__windiness">11 km/h</span>
+                            <span class="forecast-hourly-hour__direction">N-W</span>
+                        </div>
+                        <div class="forecast-hourly-hour">
+                            <span class="forecast-hourly-hour__time">09:00</span>
+                            <img class="forecast-hourly-hour__img" src="icons/cloudy_sun3 2.png" alt="cloudy">
+                            <span class="forecast-hourly-hour__temp">72° F</span>
+                            <span class="forecast-hourly-hour__windiness">11 km/h</span>
+                            <span class="forecast-hourly-hour__direction">N-W</span>
+                        </div>
+                        <div class="daily-forecast-month">
+                            <div class="daily-forecast__month">
+                                <span class="daily-forecast-month__date">23 July</span>
+                                <span class="daily-forecast-month__day">Wednesday</span>
+                                <img class="daily-forecast-month__img" src="icons/cloudy_sun3 2.png" alt="sun">
+                                <span class="daily-forecast-month__temp">min 22° max 12°</span>
+                            </div>
+                            <div class="daily-forecast__month">
+                                <span class="daily-forecast-month__date">24 July</span>
+                                <span class="daily-forecast-month__day">Wednesday</span>
+                                <img class="daily-forecast-month__img" src="icons/cloudy_sun3 2.png" alt="sun">
+                                <span class="daily-forecast-month__temp">min 22° max 12°</span>
+                            </div>
+                            <div class="daily-forecast__month">
+                                <span class="daily-forecast-month__date">25 July</span>
+                                <span class="daily-forecast-month__day">Wednesday</span>
+                                <img class="daily-forecast-month__img" src="icons/cloudy_sun3 2.png" alt="sun">
+                                <span class="daily-forecast-month__temp">min 22° max 12°</span>
+                            </div>
+                            <div class="daily-forecast__month">
+                                <span class="daily-forecast-month__date">26 July</span>
+                                <span class="daily-forecast-month__day">Wednesday</span>
+                                <img class="daily-forecast-month__img" src="icons/cloudy_sun3 2.png" alt="sun">
+                                <span class="daily-forecast-month__temp">min 22° max 12°</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <section class="previosly-watched">
+                    <div class="previosly-watched-column col">
+                        <div class="previosly-watched-column__place">
+                            <span class="previosly-watched-column__place__town">Amsterdam</span>
+                            <br>
+                            <div class="previosly-watched-column__place__country">Netherlands</div>
+                        </div>
+                        <img src="icons/cloudy_sun3 2.png" alt="cloud" class="previosly-watched-column__img">
+                        <span class="previosly-watched-column__temp">72°</span>
+                    </div>
+                    <div class="previosly-watched-column col">
+                        <div class="previosly-watched-column__place">
+                            <span class="previosly-watched-column__place__town">Amsterdam</span>
+                            <br>
+                            <div class="previosly-watched-column__place__country">Netherlands</div>
+                        </div>
+                        <img src="icons/cloudy_sun3 2.png" alt="cloud" class="previosly-watched-column__img">
+                        <span class="previosly-watched-column__temp">72°</span>
+                    </div>
+                    <div class="previosly-watched-column col">
+                        <div class="previosly-watched-column__place">
+                            <span class="previosly-watched-column__place__town">Amsterdam</span>
+                            <br>
+                            <div class="previosly-watched-column__place__country">Netherlands</div>
+                        </div>
+                        <img src="icons/cloudy_sun3 2.png" alt="cloud" class="previosly-watched-column__img">
+                        <span class="previosly-watched-column__temp">72°</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <arcticle class="description">
+                    <h2 class="description__title">Seasonal weather <span>forecast</span></h2>
+                    <div class="description-block-wrapper">
+                        <div class="description-block col">
+                            <h2 class="description-block__title">What the weather will be like in summer 2021 in
+                                Toronto?</h2>
+                            <p>Summer in 2021 year is expected to be rainy and mostly cold. Temperature in summer will
+                                fluctuate from minimum at 48 °F on 1st June to its maximum at 86 °F on 7th August ...
+                            </p>
+                            <a href="#" class="description-block__btn">Read forecast</a>
+
+                        </div>
+                        <div class="description-block col">
+                            <h2 class="description-block__title">What the weather will be like in winter in Toronto and
+                                nearby ...</h2>
+                            <p>For Toronto they forecast moderate winter weather. Over a period of the winter the
+                                temperature will go up to 50 °F and down to 10 °F.
+                            </p>
+                            <a href="#" class="description-block__btn">Read forecast</a>
+                        </div>
+                        <div class="description-block col">
+                            <h2 class="description-block__title">What the weather will be like in autumn 2021 in
+                                Toronto?</h2>
+                            <p>Autumn in Toronto will be cool and less typical. Throughout the season precipitation is
+                                predicted to be heavy and temperature will fluctuate from 34 °F to 81 °F.
+                            </p>
+                            <a href="#" class="description-block__btn">Read forecast</a>
+                        </div>
+                    </div>
+                </arcticle>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-wrapper-info">
+                    <a href="#" class="footer-wrapper-info__link">Terms of use</a> |
+                    <a href="#" class="footer-wrapper-info__link">Privacy Policy</a> |
+                    <a href="#" class="footer-wrapper-info__link">Cookies</a>
+                    </p>
+                </div>
+                <div class="footer-wrapper-logo">© wisemeteo 2024</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

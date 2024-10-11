@@ -1,0 +1,36 @@
+.previosly-watched
+    display: flex
+    margin-top: 90px
+    gap: 35px
+    .previosly-watched-column
+        background: linear-gradient(to top, #B5C4D1, #EAEEEF)
+        width: 400px
+        height: 100px
+        border-radius: 10px
+        display: flex
+        align-items: center
+        box-shadow: 0 0 8px rgba(0, 4, 7, 0.4)
+        &:hover
+            background: #0278CC
+            // background: linear-gradient(to top, rgb(2, 120, 204), #073170)
+            color: white
+        .previosly-watched-column__place
+            text-align: center
+            display: inline-block
+            margin-left: 60px
+            .previosly-watched-column__place__country
+                font-size: 13px
+                font-weight: 500
+            .previosly-watched-column__place__town
+                font-size: 20px
+                font-weight: 700
+        .previosly-watched-column__img
+            display: inline-block
+            margin-left: 20px
+            width: 80px
+            height: 80px
+        .previosly-watched-column__temp
+            display: inline-block
+            margin-left: 20px
+            font-size: 18px
+            font-weight: 700

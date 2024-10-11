@@ -1,0 +1,118 @@
+.forecast
+    display: flex
+    margin-top: 150px
+    &__main
+        margin: 15px 0 25px 0
+        display: inline-block
+        width: 330px
+        height: 350px
+        background: linear-gradient(to bottom, #0278CC, #073170)
+        box-shadow: 0 0 25px rgba(0, 3, 5, 0.6)
+        border-radius: 7%
+        padding: 50px 40px
+        span
+            display: inline-flex
+            color: white
+        &__day
+            font-size: 12px
+        &__city
+            margin-top: 8px
+            font-weight: 700
+            font-size: 26px
+        &__country
+            font-weight: 500
+            font-size: 14px
+        .forecast-main-temp
+            display: flex
+            align-items: center
+            .forecast-main__temp
+                font-weight: 700
+                font-size: 56px
+                margin-right: 20px
+        .forecast-main-weather
+            max-width: 90%
+            display: flex
+            justify-content: space-between
+    .forecast-hourly
+        display: flex
+        flex-wrap: wrap
+        row-gap: 20px
+        justify-content: space-around
+        max-height: 170px
+        box-shadow: 0 0 25px rgba(0, 3, 5, 0.2)
+        &-hour
+            width: 85px
+            // max-height: 170px
+            // background: linear-gradient(to top, rgb(2, 120, 204), #EAEEEF)
+            background: linear-gradient(to top, #B5C4D1, #EAEEEF)
+            border-radius: 4px
+            box-shadow: 0 4px 8px rgba(0, 3, 5, 0.1)
+            &:hover
+                background: linear-gradient(to top, rgb(2, 120, 204), #073170)
+                color: white
+                .forecast-hourly-hour__temp
+                    color: white
+            .forecast-hourly-hour__time
+                margin-top: 20px
+                text-align: center
+                display: block
+                font-size: 14px
+            .forecast-hourly-hour__img
+                margin: 0 auto
+                display: block
+                width: 48px
+                height: auto
+            .forecast-hourly-hour__temp
+                display: block
+                text-align: center
+                font-family: Noto Sans
+                color: #073170
+                font-size: 24px
+                font-weight: 700
+                // line-height: 0
+            .forecast-hourly-hour__windiness
+                display: block
+                text-align: center
+                font-size: 14px
+                font-weight: 500
+            .forecast-hourly-hour__direction
+                display: block
+                text-align: center
+                font-size: 14px
+                font-weight: 500
+        .daily-forecast-month
+            width: 900px
+            display: flex
+            justify-content: space-between
+            .daily-forecast__month
+                width: 210px
+                height: 198px
+                background-color: red
+                background: linear-gradient(to top, #B5C4D1, #EAEEEF)
+                // background: linear-gradient(to top, rgb(2, 120, 204), #EAEEEF)
+                border-radius: 7%
+                box-shadow: 0 4px 8px rgba(0, 3, 5, 0.4)
+                &:hover
+                    background: linear-gradient(to top, rgb(2, 120, 204), #073170)
+                    color: white
+                    .daily-forecast-month__date
+                        color: white
+                .daily-forecast-month__date
+                    display: block
+                    margin-top: 20px
+                    text-align: center
+                    color: #073170
+                    font-weight: 700
+                    font-size: 24px
+                .daily-forecast-month__day
+                    display: block
+                    text-align: center
+                .daily-forecast-month__img
+                    display: block
+                    margin: 0 auto
+                    width: 80px
+                    height: auto
+                .daily-forecast-month__temp
+                    display: block
+                    text-align: center
+                    font-weight: 500
